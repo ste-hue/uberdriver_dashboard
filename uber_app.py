@@ -1,32 +1,63 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
 
 # Minimal page config
 st.set_page_config(page_title="Uber Driver Dashboard (2024 & 2025)", layout="wide")
 
 @st.cache_data
-def load_trips_data():
-    """Loads cleaned trips for 2024 & 2025."""
-    df = pd.read_csv("analysis/cleaned_driver_trips_2024_2025.csv")
-    df["Local Dropoff Timestamp"] = pd.to_datetime(df["Local Dropoff Timestamp"], errors="coerce")
-    return df
+def load_data_from_upload():
+    """Loads data from user uploaded files"""
+    trips_data = None
+    payments_data = None
+    
+    st.sidebar.header("Upload Data Files")
+    
+    trips_file = st.sidebar.file_uploader("Upload Trips CSV", type=['csv'])
+    payments_file = st.sidebar.file_uploader("Upload Payments CSV", type=['csv'])
+    
+    if trips_file is not None:
+        trips_data = pd.read_csv(trips_file)
+        trips_data["Local Dropoff Timestamp"] = pd.to_datetime(trips_data["Local Dropoff Timestamp"], errors="coerce")
+    
+    if payments_file is not None:
+        payments_data = pd.read_csv(payments_file)
+        payments_data["Local Timestamp"] = pd.to_datetime(payments_data["Local Timestamp"], errors="coerce")
+    
+    return trips_data, payments_data
 
 @st.cache_data
-def load_payments_data():
-    """Loads cleaned payments for 2024 & 2025."""
-    df = pd.read_csv("analysis/cleaned_driver_payments_2024_2025.csv")
-    df["Local Timestamp"] = pd.to_datetime(df["Local Timestamp"], errors="coerce")
-    return df
+def load_data_from_files():
+    """Loads data from local files if available"""
+    try:
+        trips_df = pd.read_csv("analysis/cleaned_driver_trips_2024_2025.csv")
+        trips_df["Local Dropoff Timestamp"] = pd.to_datetime(trips_df["Local Dropoff Timestamp"], errors="coerce")
+        
+        payments_df = pd.read_csv("analysis/cleaned_driver_payments_2024_2025.csv")
+        payments_df["Local Timestamp"] = pd.to_datetime(payments_df["Local Timestamp"], errors="coerce")
+        
+        return trips_df, payments_df
+    except FileNotFoundError:
+        return None, None
 
 def main():
     st.title("🚗 Uber Dashboard – Years 2024 & 2025 Only")
-    st.caption("All days are pre-selected. Remove any you don’t want. Simple & direct.")
+    st.caption("All days are pre-selected. Remove any you don't want. Simple & direct.")
 
     # ---- LOAD DATA ----
     with st.spinner("Loading data..."):
-        trips_df = load_trips_data()
-        payments_df = load_payments_data()
+        # Try loading from uploads first
+        trips_df, payments_df = load_data_from_upload()
+        
+        # If no uploads, try loading from local files
+        if trips_df is None or payments_df is None:
+            trips_df, payments_df = load_data_from_files()
+            
+        # If still no data, show error
+        if trips_df is None or payments_df is None:
+            st.error("Please upload both the trips and payments CSV files to continue.")
+            st.stop()
 
     # =============================
     # SIDEBAR FILTERS
