@@ -6,16 +6,10 @@ import os
 # Minimal page config
 st.set_page_config(page_title="Uber Driver Dashboard (2024 & 2025)", layout="wide")
 
-@st.cache_data
-def load_data_from_upload():
+def load_data_from_upload(trips_file, payments_file):
     """Loads data from user uploaded files"""
     trips_data = None
     payments_data = None
-    
-    st.sidebar.header("Upload Data Files")
-    
-    trips_file = st.sidebar.file_uploader("Upload Trips CSV", type=['csv'])
-    payments_file = st.sidebar.file_uploader("Upload Payments CSV", type=['csv'])
     
     if trips_file is not None:
         trips_data = pd.read_csv(trips_file)
@@ -46,12 +40,17 @@ def main():
     st.caption("All days are pre-selected. Remove any you don't want. Simple & direct.")
 
     # ---- LOAD DATA ----
+    # Move file uploaders outside the cached function
+    st.sidebar.header("Upload Data Files")
+    trips_file = st.sidebar.file_uploader("Upload Trips CSV", type=['csv'])
+    payments_file = st.sidebar.file_uploader("Upload Payments CSV", type=['csv'])
+    
     with st.spinner("Loading data..."):
         # Try loading from uploads first
-        trips_df, payments_df = load_data_from_upload()
-        
-        # If no uploads, try loading from local files
-        if trips_df is None or payments_df is None:
+        if trips_file is not None and payments_file is not None:
+            trips_df, payments_df = load_data_from_upload(trips_file, payments_file)
+        else:
+            # If no uploads, try loading from local files
             trips_df, payments_df = load_data_from_files()
             
         # If still no data, show error
