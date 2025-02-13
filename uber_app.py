@@ -1,209 +1,206 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import os
 
-# Minimal page config
 st.set_page_config(page_title="Uber Driver Dashboard (2024 & 2025)", layout="wide")
 
-def load_data_from_upload(trips_file, payments_file):
-    """Loads data from user uploaded files"""
-    trips_data = None
-    payments_data = None
-    
-    if trips_file is not None:
-        trips_data = pd.read_csv(trips_file)
-        trips_data["Local Dropoff Timestamp"] = pd.to_datetime(trips_data["Local Dropoff Timestamp"], errors="coerce")
-    
-    if payments_file is not None:
-        payments_data = pd.read_csv(payments_file)
-        payments_data["Local Timestamp"] = pd.to_datetime(payments_data["Local Timestamp"], errors="coerce")
-    
-    return trips_data, payments_data
-
 @st.cache_data
-def load_data_from_files():
-    """Loads data from local files if available"""
-    try:
-        trips_df = pd.read_csv("analysis/cleaned_driver_trips_2024_2025.csv")
-        trips_df["Local Dropoff Timestamp"] = pd.to_datetime(trips_df["Local Dropoff Timestamp"], errors="coerce")
-        
-        payments_df = pd.read_csv("analysis/cleaned_driver_payments_2024_2025.csv")
-        payments_df["Local Timestamp"] = pd.to_datetime(payments_df["Local Timestamp"], errors="coerce")
-        
-        return trips_df, payments_df
-    except FileNotFoundError:
-        return None, None
+def load_local_data():
+    """
+    Loads local CSVs for trips & payments (no file upload).
+    Creates atomic timestamp columns for both.
+    """
+    # --- Load Trips ---
+    trips_df = pd.read_csv("analysis/cleaned_driver_trips_2024_2025.csv")
+    trips_df["Local Dropoff Timestamp"] = pd.to_datetime(trips_df["Local Dropoff Timestamp"], errors="coerce")
+    trips_df.dropna(subset=["Local Dropoff Timestamp"], inplace=True)
+
+    # Add atomic columns
+    trips_df["year"] = trips_df["Local Dropoff Timestamp"].dt.year
+    trips_df["month"] = trips_df["Local Dropoff Timestamp"].dt.month
+    trips_df["day"] = trips_df["Local Dropoff Timestamp"].dt.day
+    trips_df["hour"] = trips_df["Local Dropoff Timestamp"].dt.hour
+    trips_df["day_of_week"] = trips_df["Local Dropoff Timestamp"].dt.day_name()
+
+    # --- Load Payments ---
+    payments_df = pd.read_csv("analysis/cleaned_driver_payments_2024_2025.csv")
+    payments_df["Local Timestamp"] = pd.to_datetime(payments_df["Local Timestamp"], errors="coerce")
+    payments_df.dropna(subset=["Local Timestamp"], inplace=True)
+
+    # Add atomic columns
+    payments_df["year"] = payments_df["Local Timestamp"].dt.year
+    payments_df["month"] = payments_df["Local Timestamp"].dt.month
+    payments_df["day"] = payments_df["Local Timestamp"].dt.day
+    payments_df["hour"] = payments_df["Local Timestamp"].dt.hour
+    payments_df["day_of_week"] = payments_df["Local Timestamp"].dt.day_name()
+
+    return trips_df, payments_df
 
 def main():
-    st.title("🚗 Uber Dashboard – Years 2024 & 2025 Only")
-    st.caption("All days are pre-selected. Remove any you don't want. Simple & direct.")
+    st.title("🚗 Uber Driver Dashboard – Single Page View")
+    st.caption("Visualize 2024 & 2025 data in one place—no file uploads, no tabs, just insights.")
 
-    # ---- LOAD DATA ----
-    # Move file uploaders outside the cached function
-    st.sidebar.header("Upload Data Files")
-    trips_file = st.sidebar.file_uploader("Upload Trips CSV", type=['csv'])
-    payments_file = st.sidebar.file_uploader("Upload Payments CSV", type=['csv'])
-    
-    with st.spinner("Loading data..."):
-        # Try loading from uploads first
-        if trips_file is not None and payments_file is not None:
-            trips_df, payments_df = load_data_from_upload(trips_file, payments_file)
-        else:
-            # If no uploads, try loading from local files
-            trips_df, payments_df = load_data_from_files()
-            
-        # If still no data, show error
-        if trips_df is None or payments_df is None:
-            st.error("Please upload both the trips and payments CSV files to continue.")
-            st.stop()
+    # --- LOAD DATA ---
+    with st.spinner("Loading local CSV data..."):
+        trips_df, payments_df = load_local_data()
+
+    if trips_df.empty or payments_df.empty:
+        st.error("No data found in local CSV files. Please check file paths.")
+        st.stop()
 
     # =============================
-    # SIDEBAR FILTERS
+    # 1. COMBINED DATE RANGE FILTER
     # =============================
-    st.sidebar.header("Filter Options")
+    # We'll unify the date range across trips & payments
+    min_date = min(trips_df["Local Dropoff Timestamp"].min(), payments_df["Local Timestamp"].min())
+    max_date = max(trips_df["Local Dropoff Timestamp"].max(), payments_df["Local Timestamp"].max())
 
-    # 1) Date Range Filters
-    # --- Trips
-    trips_min_date = trips_df["Local Dropoff Timestamp"].min()
-    trips_max_date = trips_df["Local Dropoff Timestamp"].max()
+    st.sidebar.header("Global Date Filter")
+    start_date = st.sidebar.date_input("Start Date", value=min_date, min_value=min_date, max_value=max_date)
+    end_date = st.sidebar.date_input("End Date", value=max_date, min_value=min_date, max_value=max_date)
 
-    start_date_trips = st.sidebar.date_input(
-        "Trips Start Date",
-        value=trips_min_date,
-        min_value=trips_min_date,
-        max_value=trips_max_date
-    )
-    end_date_trips = st.sidebar.date_input(
-        "Trips End Date",
-        value=trips_max_date,
-        min_value=trips_min_date,
-        max_value=trips_max_date
-    )
-
-    # --- Payments
-    pay_min_date = payments_df["Local Timestamp"].min()
-    pay_max_date = payments_df["Local Timestamp"].max()
-
-    start_date_pay = st.sidebar.date_input(
-        "Payments Start Date",
-        value=pay_min_date,
-        min_value=pay_min_date,
-        max_value=pay_max_date
-    )
-    end_date_pay = st.sidebar.date_input(
-        "Payments End Date",
-        value=pay_max_date,
-        min_value=pay_min_date,
-        max_value=pay_max_date
-    )
-
-    # 2) Day-of-Week Filter (Unified for Both)
-    all_trip_days = trips_df["day_of_week"].dropna().unique()
-    all_pay_days = payments_df["day_of_week"].dropna().unique()
-
-    # Union of all possible days from trips & payments
-    all_days = sorted(set(all_trip_days) | set(all_pay_days))
-
-    # By default, select all
-    selected_days = st.sidebar.multiselect("Days of Week (Trips & Payments)", all_days, default=all_days)
-
-    # =============================
-    # APPLY FILTERS
-    # =============================
-    # Trips Filter
+    # Filter trips
     trips_mask = (
-        (trips_df["Local Dropoff Timestamp"] >= pd.to_datetime(start_date_trips)) &
-        (trips_df["Local Dropoff Timestamp"] <= pd.to_datetime(end_date_trips)) &
-        (trips_df["day_of_week"].isin(selected_days))
+        (trips_df["Local Dropoff Timestamp"] >= pd.to_datetime(start_date)) &
+        (trips_df["Local Dropoff Timestamp"] <= pd.to_datetime(end_date))
     )
     filtered_trips = trips_df[trips_mask].copy()
 
-    # Payments Filter
+    # Filter payments
     pay_mask = (
-        (payments_df["Local Timestamp"] >= pd.to_datetime(start_date_pay)) &
-        (payments_df["Local Timestamp"] <= pd.to_datetime(end_date_pay)) &
-        (payments_df["day_of_week"].isin(selected_days))
+        (payments_df["Local Timestamp"] >= pd.to_datetime(start_date)) &
+        (payments_df["Local Timestamp"] <= pd.to_datetime(end_date))
     )
     filtered_payments = payments_df[pay_mask].copy()
 
     # =============================
-    # TABS
+    # 2. KEY METRICS & OVERVIEW
     # =============================
-    tab1, tab2 = st.tabs(["📊 Trips", "💰 Payments"])
+    st.subheader("Overview")
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        total_trips = len(filtered_trips)
+        st.metric("Total Trips", f"{total_trips:,}")
+    with col2:
+        avg_distance = filtered_trips["Trip Distance (miles)"].mean() if not filtered_trips.empty else 0
+        st.metric("Avg Trip Distance (mi)", f"{avg_distance:.2f}")
+    with col3:
+        total_payments = filtered_payments["Local Amount"].sum() if not filtered_payments.empty else 0
+        st.metric("Total Earnings", f"${total_payments:,.2f}")
+    with col4:
+        # Just an example: average payment amount
+        avg_payment = filtered_payments["Local Amount"].mean() if not filtered_payments.empty else 0
+        st.metric("Avg Payment", f"${avg_payment:,.2f}")
 
-    # === TAB 1: TRIPS ===
-    with tab1:
-        st.subheader("Filtered Trips")
-        st.write(f"**{len(filtered_trips)}** total trips in selection.")
-        st.dataframe(filtered_trips.head(10))
+    # =============================
+    # 3. TOP DAYS (TRIPS & PAYMENTS)
+    # =============================
+    st.subheader("Top Days of the Week")
+    colA, colB = st.columns(2)
 
-        # Quick metric: Average Trip Distance
+    with colA:
+        st.markdown("**Top Day(s) by Number of Trips**")
         if not filtered_trips.empty:
-            avg_dist = filtered_trips["Trip Distance (miles)"].mean()
-            st.metric("Average Trip Distance (mi)", f"{avg_dist:.2f}")
+            # Count how many trips per day_of_week
+            day_trip_count = (
+                filtered_trips.groupby("day_of_week")["Local Dropoff Timestamp"]
+                .count()
+                .reset_index()
+                .rename(columns={"Local Dropoff Timestamp": "trip_count"})
+            )
+            day_trip_count.sort_values("trip_count", ascending=False, inplace=True)
+            st.dataframe(day_trip_count.head(3))
+        else:
+            st.info("No trips in selected date range.")
 
-            # Daily average distance chart
-            filtered_trips["date_only"] = filtered_trips["Local Dropoff Timestamp"].dt.date
-            daily_trips = filtered_trips.groupby("date_only")["Trip Distance (miles)"].mean().reset_index()
-
-            if not daily_trips.empty:
-                fig_trips = px.line(
-                    daily_trips,
-                    x="date_only",
-                    y="Trip Distance (miles)",
-                    title="Average Daily Trip Distance",
-                    labels={"date_only": "Date", "Trip Distance (miles)": "Miles"},
-                    markers=True
-                )
-                st.plotly_chart(fig_trips, use_container_width=True)
-
-    # === TAB 2: PAYMENTS ===
-    with tab2:
-        st.subheader("Filtered Payments")
-        st.write(f"**{len(filtered_payments)}** payment records in selection.")
-        st.dataframe(filtered_payments.head(10))
-
+    with colB:
+        st.markdown("**Top Day(s) by Earnings**")
         if not filtered_payments.empty:
-            # Key metric: total earnings
-            total_earnings = filtered_payments["Local Amount"].sum()
-            st.metric("Total Earnings (Filtered)", f"${total_earnings:,.2f}")
+            day_pay_sums = (
+                filtered_payments.groupby("day_of_week")["Local Amount"]
+                .sum()
+                .reset_index()
+                .sort_values(by="Local Amount", ascending=False)
+            )
+            st.dataframe(day_pay_sums.head(3).style.format({"Local Amount": "${:,.2f}"}))
+        else:
+            st.info("No payments in selected date range.")
 
-            # Daily payment timeline
-            filtered_payments["date_only"] = filtered_payments["Local Timestamp"].dt.date
-            daily_payments = filtered_payments.groupby("date_only")["Local Amount"].sum().reset_index()
-            if not daily_payments.empty:
-                fig_pay = px.line(
-                    daily_payments,
-                    x="date_only",
-                    y="Local Amount",
-                    title="Daily Total Payment",
-                    labels={"date_only": "Date", "Local Amount": "USD"},
-                    markers=True
-                )
-                st.plotly_chart(fig_pay, use_container_width=True)
+    # =============================
+    # 4. DAILY EARNINGS LINE CHART
+    # =============================
+    st.subheader("Daily Total Earnings")
+    if not filtered_payments.empty:
+        filtered_payments["date_only"] = filtered_payments["Local Timestamp"].dt.date
+        daily_pay = (
+            filtered_payments.groupby("date_only")["Local Amount"]
+            .sum()
+            .reset_index()
+        )
+        fig_pay = px.line(
+            daily_pay,
+            x="date_only",
+            y="Local Amount",
+            title="Daily Earnings Over Time",
+            labels={"date_only": "Date", "Local Amount": "USD"},
+            markers=True
+        )
+        fig_pay.update_yaxes(tickprefix="$")
+        st.plotly_chart(fig_pay, use_container_width=True)
+    else:
+        st.info("No payment data for selected range.")
 
-            # Optional: Payment Category breakdown
-            if "Category" in filtered_payments.columns:
-                cat_sums = (
-                    filtered_payments.groupby("Category")["Local Amount"]
-                    .sum()
-                    .reset_index()
-                    .sort_values(by="Local Amount", ascending=False)
-                )
-                if not cat_sums.empty:
-                    fig_cat = px.bar(
-                        cat_sums,
-                        x="Category",
-                        y="Local Amount",
-                        color="Local Amount",
-                        color_continuous_scale="Blues",
-                        title="Payments by Category"
-                    )
-                    st.plotly_chart(fig_cat, use_container_width=True)
+    # =============================
+    # 5. AVERAGE TRIP DISTANCE BY DAY_OF_WEEK (BAR)
+    # =============================
+    st.subheader("Average Trip Distance by Day of Week")
+    if not filtered_trips.empty:
+        avg_dist_day = (
+            filtered_trips.groupby("day_of_week")["Trip Distance (miles)"]
+            .mean()
+            .reset_index()
+        )
+        fig_dist = px.bar(
+            avg_dist_day,
+            x="day_of_week",
+            y="Trip Distance (miles)",
+            title="Avg Trip Distance by Day of Week",
+            labels={"Trip Distance (miles)": "Miles"},
+            color="Trip Distance (miles)",
+            color_continuous_scale="Blues"
+        )
+        st.plotly_chart(fig_dist, use_container_width=True)
+    else:
+        st.info("No trip data for selected range.")
+
+    # =============================
+    # 6. "TOP 10" TABLES (OPTIONAL)
+    # =============================
+    st.subheader("Top 10 Highest-Paying Single Trips (If Applicable)")
+    if "Local Original Fare" in filtered_trips.columns and not filtered_trips.empty:
+        # Sort by fare desc
+        top_trips = filtered_trips.sort_values("Local Original Fare", ascending=False).head(10)
+        st.dataframe(
+            top_trips[["Local Dropoff Timestamp", "Local Original Fare", "Trip Distance (miles)"]]
+            .style.format({"Local Original Fare": "${:,.2f}"})
+        )
+    else:
+        st.info("No 'Local Original Fare' column found, or no trip data available.")
+
+    st.subheader("Top 10 Largest Payment Records")
+    if not filtered_payments.empty:
+        # Sort by 'Local Amount' desc
+        top_payments = filtered_payments.sort_values("Local Amount", ascending=False).head(10)
+        st.dataframe(
+            top_payments[["Local Timestamp", "Local Amount", "Category"]]
+            .style.format({"Local Amount": "${:,.2f}"})
+        )
+    else:
+        st.info("No payment data for selected range.")
 
     st.write("---")
-    st.success("Done! Toggle 'Days of Week' or Date ranges in the sidebar to refine your view.")
+    st.success("All insights in one place! Adjust the date range in the sidebar to see different results.")
 
 if __name__ == "__main__":
     main()
