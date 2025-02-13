@@ -1,0 +1,215 @@
+City_Name,Restaurant_Name,Request_Time_Local,Final_Delivery_Time_Local,Order_Status,Item_Name,Item_quantity,Customizations,Customization_Cost_Local,Special_Instructions,Item_Price,Order_Price,Currency
+Los Angeles,Detroit Pizza Depot − Hollywood,2024-11-07T12:51:27.000Z,2024-11-07T14:21:45.000Z,completed,Boneless Chicken Wings (16oz),1,Frank's Red Hot,0.0,"",12.99,36.24,USD
+Los Angeles,Detroit Pizza Depot − Hollywood,2024-11-07T12:51:27.000Z,2024-11-07T14:21:45.000Z,completed,Chipotle Chili Aioli,1,"",,"",1.7,36.24,USD
+Los Angeles,Detroit Pizza Depot − Hollywood,2024-11-07T12:51:27.000Z,2024-11-07T14:21:45.000Z,completed,The Detroiter,2,4-Corner Pizza (Serves 1-2),0.0,"",39.98,36.24,USD
+Los Angeles,HiHo Cheeseburger (1320 2nd St),2024-11-05T21:25:07.000Z,2024-11-05T21:47:20.000Z,completed,Classic Double Cheeseburger,1,Fries,4.95,"",8.95,47.77,USD
+Los Angeles,HiHo Cheeseburger (1320 2nd St),2024-11-05T21:25:07.000Z,2024-11-05T21:47:20.000Z,completed,HiHo Double Cheeseburger,1,Add Spicy Slow-Cooked Onions,1.75,"",9.95,47.77,USD
+Los Angeles,HiHo Cheeseburger (1320 2nd St),2024-11-05T21:25:07.000Z,2024-11-05T21:47:20.000Z,completed,Chocolate Shake,1,Add a Straw,0.0,"",5.95,47.77,USD
+Los Angeles,HiHo Cheeseburger (1320 2nd St),2024-11-05T21:25:07.000Z,2024-11-05T21:47:20.000Z,completed,Classic Double Cheeseburger,1,"",,"",8.95,47.77,USD
+Los Angeles,HiHo Cheeseburger (1320 2nd St),2024-11-05T21:25:07.000Z,2024-11-05T21:47:20.000Z,completed,Classic Double Cheeseburger,1,Add Spicy Slow-Cooked Onions,1.75,"",8.95,47.77,USD
+Los Angeles,McDonald's® (La-7Th & Western),2024-10-27T00:47:06.000Z,2024-10-27T01:12:32.000Z,completed,20 pc. Chicken McNuggets®,1,"Honey Mustard, Sweet N Sour Dipping Sauce, Hot Mustard Dipping Sauce",0.0,"",11.39,67.4,USD
+Los Angeles,McDonald's® (La-7Th & Western),2024-10-27T00:47:06.000Z,2024-10-27T01:12:32.000Z,completed,Medium Dr Pepper®,1,Ice,0.0,"",2.89,67.4,USD
+Los Angeles,McDonald's® (La-7Th & Western),2024-10-27T00:47:06.000Z,2024-10-27T01:12:32.000Z,completed,Medium French Fries,3,Salt,0.0,"",17.07,67.4,USD
+Los Angeles,McDonald's® (La-7Th & Western),2024-10-27T00:47:06.000Z,2024-10-27T01:12:32.000Z,completed,Medium French Fries,3,Large French Fries,1.0,"",17.07,67.4,USD
+Los Angeles,McDonald's® (La-7Th & Western),2024-10-27T00:47:06.000Z,2024-10-27T01:12:32.000Z,completed,Chicken Big Mac® Meal,1,"Shredded Lettuce, Medium Sprite®, Chicken Big Mac® Meal, Salt, Big Mac® Chicken Patty, American Cheese, Ice, Big Mac® Bun, Pickle, Mac Sauce",0.0,"",15.89,67.4,USD
+Los Angeles,McDonald's® (La-7Th & Western),2024-10-27T00:47:06.000Z,2024-10-27T01:12:32.000Z,completed,Medium Coke®,1,"Straw, Ice",0.0,"",2.89,67.4,USD
+Los Angeles,McDonald's® (La-7Th & Western),2024-10-27T00:47:06.000Z,2024-10-27T01:12:32.000Z,completed,Medium Coke®,1,Large Coke®,0.4,"",2.89,67.4,USD
+Los Angeles,McDonald's® (La-7Th & Western),2024-10-27T00:47:06.000Z,2024-10-27T01:12:32.000Z,completed,Medium Diet Coke®,1,Ice,0.0,"",2.89,67.4,USD
+Los Angeles,McDonald's® (La-7Th & Western),2024-10-27T00:47:06.000Z,2024-10-27T01:12:32.000Z,completed,Medium Diet Coke®,1,Large Diet Coke®,0.4,"",2.89,67.4,USD
+Los Angeles,McDonald's® (La-7Th & Western),2024-10-27T00:47:06.000Z,2024-10-27T01:12:32.000Z,completed,Medium Dr Pepper®,1,Large Dr Pepper®,0.4,"",2.89,67.4,USD
+Los Angeles,Curry Kingdom,2024-06-21T21:38:10.000Z,2024-06-21T22:03:31.000Z,completed,Butter Chicken,1,Very Hot,0.0,"",15.95,40.75,USD
+Los Angeles,Curry Kingdom,2024-06-21T21:38:10.000Z,2024-06-21T22:03:31.000Z,completed,Garlic Naan,1,"",,"",4.5,40.75,USD
+Los Angeles,Curry Kingdom,2024-06-21T21:38:10.000Z,2024-06-21T22:03:31.000Z,completed,Veg Samosa (2 pcs),1,"",,"",5.95,40.75,USD
+Los Angeles,Curry Kingdom,2024-06-21T21:38:10.000Z,2024-06-21T22:03:31.000Z,completed,Butter Chicken,1,Basmati Rice,4.5,"",15.95,40.75,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-09-22T00:28:34.000Z,2022-09-22T00:54:27.000Z,completed,Buffalo Sauce,1,"",,,1.0,23.76,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-09-22T00:28:34.000Z,2022-09-22T00:54:27.000Z,completed,Create Your Own Medium Pizza,1,Pepperoni,1.75,,14.99,23.76,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-09-22T00:28:34.000Z,2022-09-22T00:54:27.000Z,completed,Canned Soda,2,Coca-Cola,0.0,,2.5,23.76,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-09-15T03:02:49.000Z,2022-09-15T03:33:55.000Z,completed,BBQ,1,"",,,1.0,13.14,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-09-15T03:02:49.000Z,2022-09-15T03:33:55.000Z,completed,Buffalo Sauce,1,"",,,1.0,13.14,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-09-15T03:02:49.000Z,2022-09-15T03:33:55.000Z,completed,Canned Soda,2,Coca-Cola,0.0,,2.5,13.14,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-09-15T03:02:49.000Z,2022-09-15T03:33:55.000Z,completed,Create Your Own Medium Pizza,1,"Pepperoni, Jalapeno Peppers, Black Olives",1.75,,14.99,13.14,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-08-25T00:38:22.000Z,2022-08-25T01:04:45.000Z,completed,Gatorade,1,"",,,4.25,14.77,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-08-25T00:38:22.000Z,2022-08-25T01:04:45.000Z,completed,Buffalo Sauce,1,"",,,1.0,14.77,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-08-25T00:38:22.000Z,2022-08-25T01:04:45.000Z,completed,Create Your Own Medium Pizza,1,"Pepperoni, Jalapeno Peppers, Black Olives",1.75,,14.99,14.77,USD
+Los Angeles,All About The Bread,2022-08-05T15:56:23.000Z,2022-08-05T16:56:24.000Z,completed,Extra Hot Peppers on Side,1,"",,,0.75,26.52,USD
+Los Angeles,All About The Bread,2022-08-05T15:56:23.000Z,2022-08-05T16:56:24.000Z,completed,Turkey Club Sandwich,1,Small,0.0,,12.95,26.52,USD
+Los Angeles,All About The Bread,2022-08-05T15:56:23.000Z,2022-08-05T16:56:24.000Z,completed,Chips,1,Hawaiian Luau BBQ,0.0,,1.95,26.52,USD
+Los Angeles,All About The Bread,2022-08-05T15:56:23.000Z,2022-08-05T16:56:24.000Z,completed,San Pellegrino,1,San Pellegrino - Orange,0.0,Blood orange,2.5,26.52,USD
+Los Angeles,Pizza and Panini (Van Nuys),2022-08-04T01:52:15.000Z,2022-08-04T02:23:54.000Z,completed,Buffalo,1,"",,,1.0,22.38,USD
+Los Angeles,Pizza and Panini (Van Nuys),2022-08-04T01:52:15.000Z,2022-08-04T02:23:54.000Z,completed,Chicken Tenders,1,"",,,10.95,22.38,USD
+Los Angeles,Pizza and Panini (Van Nuys),2022-08-04T01:52:15.000Z,2022-08-04T02:23:54.000Z,completed,Create Your Own Pizza,1,Medium (12''),1.0,,11.99,22.38,USD
+Los Angeles,Pizza and Panini (Van Nuys),2022-08-04T01:52:15.000Z,2022-08-04T02:23:54.000Z,completed,Honey Mustard,1,"",,,1.0,22.38,USD
+Los Angeles,Pizza and Panini (Van Nuys),2022-08-04T01:52:15.000Z,2022-08-04T02:23:54.000Z,completed,Orange,1,"",,,2.5,22.38,USD
+Los Angeles,Pizza and Panini (Van Nuys),2022-08-04T01:52:15.000Z,2022-08-04T02:23:54.000Z,completed,Create Your Own Pizza,1,Pepperoni,2.0,,11.99,22.38,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-07-20T20:35:59.000Z,2022-07-20T22:06:19.000Z,completed,Coca Cola,1,"",,,4.75,16.89,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-07-20T20:35:59.000Z,2022-07-20T22:06:19.000Z,completed,"Pepperoni Small (10\")",1,"",,,15.99,16.89,USD
+Los Angeles,Dr. Hogly Woglys Tyler Texas BBQ,2022-07-18T18:38:30.000Z,2022-07-18T19:10:18.000Z,completed,Beef Brisket Sandwich,1,Macaroni Salad,0.0,,15.95,26.08,USD
+Los Angeles,Dr. Hogly Woglys Tyler Texas BBQ,2022-07-18T18:38:30.000Z,2022-07-18T19:10:18.000Z,completed,Loaf of Bread,1,"",,,2.25,26.08,USD
+Los Angeles,Buffalo Wild Wings (15301 Ventura Blvd.),2022-05-16T22:12:39.000Z,2022-05-16T22:56:54.000Z,completed,Boneless Wings,1,"Ranch, Buffalo (Dry Seasoning), Wild®, Hot, Carrots & Celery",0.0,,0.0,45.53,USD
+Los Angeles,Buffalo Wild Wings (15301 Ventura Blvd.),2022-05-16T22:12:39.000Z,2022-05-16T22:56:54.000Z,completed,Chips & House-made Guacamole,1,"",,,9.49,45.53,USD
+Los Angeles,Buffalo Wild Wings (15301 Ventura Blvd.),2022-05-16T22:12:39.000Z,2022-05-16T22:56:54.000Z,completed,Jammin Jalapeño,1,"",,,0.6,45.53,USD
+Los Angeles,Buffalo Wild Wings (15301 Ventura Blvd.),2022-05-16T22:12:39.000Z,2022-05-16T22:56:54.000Z,completed,Salsa,1,"",,,0.6,45.53,USD
+Los Angeles,Buffalo Wild Wings (15301 Ventura Blvd.),2022-05-16T22:12:39.000Z,2022-05-16T22:56:54.000Z,completed,Blazin'® Carolina Reaper,1,"",,,0.6,45.53,USD
+Los Angeles,Buffalo Wild Wings (15301 Ventura Blvd.),2022-05-16T22:12:39.000Z,2022-05-16T22:56:54.000Z,completed,Boneless Wings,1,Add Regular French Fries,5.29,,0.0,45.53,USD
+Los Angeles,Buffalo Wild Wings (15301 Ventura Blvd.),2022-05-16T22:12:39.000Z,2022-05-16T22:56:54.000Z,completed,Boneless Wings,1,10 Boneless Wings,15.99,,0.0,45.53,USD
+Los Angeles,Buffalo Wild Wings (15301 Ventura Blvd.),2022-05-16T22:12:39.000Z,2022-05-16T22:56:54.000Z,completed,Original Buffalo,1,"",,,0.6,45.53,USD
+Los Angeles,Buffalo Wild Wings (15301 Ventura Blvd.),2022-05-16T22:12:39.000Z,2022-05-16T22:56:54.000Z,completed,Wild®,1,"",,,0.6,45.53,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-05-16T00:45:25.000Z,2022-05-16T02:16:05.000Z,completed,"Pepperoni Small (10\")",1,"",,,15.99,17.51,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-05-03T04:12:27.000Z,2022-05-03T04:32:46.000Z,completed,Orange Crush,1,"",,,3.0,20.79,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-05-03T04:12:27.000Z,2022-05-03T04:32:46.000Z,completed,"Pepperoni Small (10\")",1,"",,,15.99,20.79,USD
+Los Angeles,Milan’s Pizzeria,2022-04-28T23:11:00.000Z,2022-04-29T00:41:20.000Z,completed,"12\" Medium Cheese Pizza",1,"JALAPENO, PEPPERONI, PINEAPPLE",1.95,,12.99,31.03,USD
+Los Angeles,Milan’s Pizzeria,2022-04-28T23:11:00.000Z,2022-04-29T00:41:20.000Z,completed,Caesar Salad,1,"",,,9.5,31.03,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-04-26T03:32:09.000Z,2022-04-26T04:50:58.000Z,completed,Honey Mustard,1,"",,,1.0,30.59,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-04-26T03:32:09.000Z,2022-04-26T04:50:58.000Z,completed,Buffalo Sauce,1,"",,,1.0,30.59,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-04-26T03:32:09.000Z,2022-04-26T04:50:58.000Z,completed,Chicken Tenders,1,"",,,9.95,30.59,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-04-26T03:32:09.000Z,2022-04-26T04:50:58.000Z,completed,"Pepperoni Small (10\")",1,"",,,15.99,30.59,USD
+Los Angeles,Milan’s Pizzeria,2022-04-16T23:48:18.000Z,2022-04-17T00:17:40.000Z,completed,Philly Cheese Steak Sub,1,"Water bottle, Fries",0.0,can I have a side of buffalo sauce?,12.99,14.22,USD
+Los Angeles,NY Crust Pizzeria (Van Nuys),2022-04-15T02:16:54.000Z,2022-04-15T02:49:23.000Z,completed,Create Your Own Pizza,1,"Medium (12\")",1.0,,12.99,33.27,USD
+Los Angeles,NY Crust Pizzeria (Van Nuys),2022-04-15T02:16:54.000Z,2022-04-15T02:49:23.000Z,completed,Create Your Own Pizza,1,"Black Olives , Pepperoni , Jalapeno Pepper",1.75,,12.99,33.27,USD
+Los Angeles,NY Crust Pizzeria (Van Nuys),2022-04-15T02:16:54.000Z,2022-04-15T02:49:23.000Z,completed,Create Your Own Pizza,1,Regular,0.0,,12.99,33.27,USD
+Los Angeles,NY Crust Pizzeria (Van Nuys),2022-04-15T02:16:54.000Z,2022-04-15T02:49:23.000Z,completed,Crushed Red Peppers,1,"",,,1.0,33.27,USD
+Los Angeles,NY Crust Pizzeria (Van Nuys),2022-04-15T02:16:54.000Z,2022-04-15T02:49:23.000Z,completed,Mexican Glass,1,Orange Crush,0.0,,3.25,33.27,USD
+Los Angeles,Festival's Pastas (Van Nuys),2022-04-15T02:15:06.000Z,2022-04-15T02:15:49.000Z,canceled,Chicken Parmigiana,1,Garlic Bread (Small),2.99,,15.99,0.0,USD
+Los Angeles,Festival's Pastas (Van Nuys),2022-04-15T02:15:06.000Z,2022-04-15T02:15:49.000Z,canceled,Mexican Glass Sprite,1,"",,,4.99,0.0,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-04-13T01:49:34.000Z,2022-04-13T02:18:38.000Z,completed,Orange Crush,1,"",,,3.0,29.96,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-04-13T01:49:34.000Z,2022-04-13T02:18:38.000Z,completed,Buffalo Sauce,1,"",,,1.0,29.96,USD
+Los Angeles,Alessandro's Pizza (Van Nuys),2022-04-13T01:49:34.000Z,2022-04-13T02:18:38.000Z,completed,Create Your Own Small Pizza,1,"Pepperoni, Jalapeno Peppers, Black Olives",1.25,,12.99,29.96,USD
+Los Angeles,Hanabishi by Kyushu Ramen,2022-04-02T22:15:46.000Z,2022-04-02T22:51:12.000Z,completed,Coke,1,"",,,2.5,29.91,USD
+Los Angeles,Hanabishi by Kyushu Ramen,2022-04-02T22:15:46.000Z,2022-04-02T22:51:12.000Z,completed,Jalapeno Roll,1,"",,,7.19,29.91,USD
+Los Angeles,Hanabishi by Kyushu Ramen,2022-04-02T22:15:46.000Z,2022-04-02T22:51:12.000Z,completed,Spicy Fried Chicken Karaage Bowl,1,"",,,13.1,29.91,USD
+Los Angeles,Hanabishi by Kyushu Ramen,2022-04-02T22:15:46.000Z,2022-04-02T22:51:12.000Z,completed,Gyoza (5 pcs),1,Chicken,0.0,,8.0,29.91,USD
+Los Angeles,Angelino's Burgers/Pizza,2022-04-02T01:08:16.000Z,2022-04-02T01:36:11.000Z,completed,Buffalo Sauce,1,"",,,1.0,53.09,USD
+Los Angeles,Angelino's Burgers/Pizza,2022-04-02T01:08:16.000Z,2022-04-02T01:36:11.000Z,completed,Crush Red Pepper,1,"",,,1.0,53.09,USD
+Los Angeles,Angelino's Burgers/Pizza,2022-04-02T01:08:16.000Z,2022-04-02T01:36:11.000Z,completed,Honey Mustard,1,"",,,1.0,53.09,USD
+Los Angeles,Angelino's Burgers/Pizza,2022-04-02T01:08:16.000Z,2022-04-02T01:36:11.000Z,completed,Sweet and Spicy Pizza,1,"Large (14\")",6.96,,13.99,53.09,USD
+Los Angeles,Angelino's Burgers/Pizza,2022-04-02T01:08:16.000Z,2022-04-02T01:36:11.000Z,completed,BBQ Chicken Tenders (6 pcs),1,"",,,12.95,53.09,USD
+Los Angeles,Angelino's Burgers/Pizza,2022-04-02T01:08:16.000Z,2022-04-02T01:36:11.000Z,completed,Drink (Cans),1,Dr. Pepper,0.0,,2.5,53.09,USD
+Los Angeles,Pink Taco (Los Angeles),2022-03-27T18:34:55.000Z,2022-03-27T19:22:12.000Z,completed,DIABLO SALSA,1,"",,,1.0,49.94,USD
+Los Angeles,Pink Taco (Los Angeles),2022-03-27T18:34:55.000Z,2022-03-27T19:22:12.000Z,completed,FAJITA ENTREE,1,"FLOUR TORTILLAS, MEXICAN RICE, PINTO BEANS",0.0,,19.0,49.94,USD
+Los Angeles,Pink Taco (Los Angeles),2022-03-27T18:34:55.000Z,2022-03-27T19:22:12.000Z,completed,GUACAMOLE,1,"",,,13.25,49.94,USD
+Los Angeles,Pink Taco (Los Angeles),2022-03-27T18:34:55.000Z,2022-03-27T19:22:12.000Z,completed,FAJITA ENTREE,1,STEAK,4.0,,19.0,49.94,USD
+Los Angeles,Super Smash Burgers,2022-01-30T21:04:41.000Z,2022-01-30T21:33:15.000Z,completed,Fries,1,"",,,3.99,24.46,USD
+Los Angeles,Super Smash Burgers,2022-01-30T21:04:41.000Z,2022-01-30T21:33:15.000Z,completed,Super Smash Burger,2,Single,0.0,,6.99,24.46,USD
+Los Angeles,Super Smash Burgers,2022-01-30T21:04:41.000Z,2022-01-30T21:33:15.000Z,completed,Super Smash Burger,2,"Tomato, Lettuce, Grilled Onions",0.5,,6.99,24.46,USD
+Los Angeles,Super Smash Burgers,2022-01-30T21:04:41.000Z,2022-01-30T21:33:15.000Z,completed,Coke,1,"",,,1.99,24.46,USD
+Los Angeles,Super Smash Burgers,2022-01-30T21:04:41.000Z,2022-01-30T21:33:15.000Z,completed,Honey Mustard,1,"",,,0.99,24.46,USD
+Los Angeles,Stogz (Hollywood),2022-01-29T18:06:21.000Z,2022-01-29T18:32:15.000Z,completed,Backwoods 5 Pack,1,5 Pack Sweet Aromatic,0.0,,12.99,50.72,USD
+Los Angeles,Stogz (Hollywood),2022-01-29T18:06:21.000Z,2022-01-29T18:32:15.000Z,completed,Hyppe Max Flow,1,Cola Ice,0.0,,29.99,50.72,USD
+Los Angeles,Stogz (Hollywood),2022-01-29T18:06:21.000Z,2022-01-29T18:32:15.000Z,completed,Pop Tarts,1,Brown Sugar Cinnamon,0.0,,2.99,50.72,USD
+Los Angeles,Yoshinoya (Panorama City),2022-01-19T23:48:17.000Z,2022-01-20T01:18:37.000Z,completed,Coleslaw Only,1,"",,,2.69,25.44,USD
+Los Angeles,Yoshinoya (Panorama City),2022-01-19T23:48:17.000Z,2022-01-20T01:18:37.000Z,completed,Combo Bowl,1,"White Rice, 2-piece Vegetable Spring Rolls, No, Vegetables, Orange Chicken, Habanero Chicken",0.0,,10.09,25.44,USD
+Los Angeles,Yoshinoya (Panorama City),2022-01-19T23:48:17.000Z,2022-01-20T01:18:37.000Z,completed,Combo Bowl,1,White Rice and Udon Noodles,1.29,,10.09,25.44,USD
+Los Angeles,Yoshinoya (Panorama City),2022-01-19T23:48:17.000Z,2022-01-20T01:18:37.000Z,completed,Combo Bowl,1,Bundle it,3.89,,10.09,25.44,USD
+Los Angeles,Yoshinoya (Panorama City),2022-01-19T23:48:17.000Z,2022-01-20T01:18:37.000Z,completed,Spring Rolls,1,4 Veggie Spring Rolls,1.2,,2.49,25.44,USD
+Los Angeles,Yoshinoya (Panorama City),2022-01-19T23:48:17.000Z,2022-01-20T01:18:37.000Z,completed,Teriyaki Sauce Only,1,"",,,0.89,25.44,USD
+Los Angeles,Yoshinoya (Panorama City),2022-01-19T23:48:17.000Z,2022-01-20T01:18:37.000Z,completed,Combo Bowl,1,Dole Strawberry Lemonade,0.69,,10.09,25.44,USD
+Los Angeles,Denny's (13136 Sherman Way),2022-01-18T23:59:36.000Z,2022-01-19T00:19:36.000Z,completed,Build Your Own Grand Slam®,1,"Buttermilk Pancakes, Hash Browns with Cheese",1.49,,11.79,29.41,USD
+Los Angeles,Denny's (13136 Sherman Way),2022-01-18T23:59:36.000Z,2022-01-19T00:19:36.000Z,completed,Build Your Own Grand Slam®,1,Minute Maid Orange Juice,4.29,,11.79,29.41,USD
+Los Angeles,Denny's (13136 Sherman Way),2022-01-18T23:59:36.000Z,2022-01-19T00:19:36.000Z,completed,Seasoned Fries,1,"",,,5.59,29.41,USD
+Los Angeles,Denny's (13136 Sherman Way),2022-01-18T23:59:36.000Z,2022-01-19T00:19:36.000Z,completed,Build Your Own Grand Slam®,1,"Over Medium, 2 Toast, (2) Wheat Toast, 2 Pancakes, (2) Turkey Bacon Strips, 2 Eggs, Potatoes, 2 Bacon",0.0,,11.79,29.41,USD
+Los Angeles,Denny's (13136 Sherman Way),2022-01-18T23:59:36.000Z,2022-01-19T00:19:36.000Z,completed,Sauces and Dressings,1,"Buffalo Sauce, Honey Mustard Dressing, Nashville Hot Sauce",0.0,,1.19,29.41,USD
+Los Angeles,Milan’s Pizzeria,2022-01-17T21:22:10.000Z,2022-01-17T21:54:52.000Z,completed,Mexican Coke®,1,"",,,3.5,24.72,USD
+Los Angeles,Milan’s Pizzeria,2022-01-17T21:22:10.000Z,2022-01-17T21:54:52.000Z,completed,French fries,1,Side of ranch,1.0,Instead of the ranch could I have hotsauce side?,5.95,24.72,USD
+Los Angeles,Milan’s Pizzeria,2022-01-17T21:22:10.000Z,2022-01-17T21:54:52.000Z,completed,Philly Cheese Steak Sub,1,"Fries, Dr Pepper",0.0,"No mayo please, but could I have a little bit of ketchup? Thanks!",12.99,24.72,USD
+Los Angeles,Boo's Philly Cheesesteaks - Koreatown,2022-01-10T18:13:09.000Z,2022-01-10T18:48:18.000Z,completed,Boo's Cheesesteak,1,Sweet Bell Peppers,1.0,,12.45,43.45,USD
+Los Angeles,Boo's Philly Cheesesteaks - Koreatown,2022-01-10T18:13:09.000Z,2022-01-10T18:48:18.000Z,completed,Fries,1,Large,0.7,Hot sauce on side if you have it… thank you!,4.5,43.45,USD
+Los Angeles,Boo's Philly Cheesesteaks - Koreatown,2022-01-10T18:13:09.000Z,2022-01-10T18:48:18.000Z,completed,Boo's Cheesesteak,1,Cheese Whiz,0.0,,12.45,43.45,USD
+Los Angeles,Boo's Philly Cheesesteaks - Koreatown,2022-01-10T18:13:09.000Z,2022-01-10T18:48:18.000Z,completed,Boo's Turkey Hoagie,1,Provolone,0.0,No pickles on sandwich please! Could i have them on the side? If not its OK. Thanks!,12.45,43.45,USD
+Los Angeles,Boo's Philly Cheesesteaks - Koreatown,2022-01-10T18:13:09.000Z,2022-01-10T18:48:18.000Z,completed,Dr. Pepper,1,"",,,2.95,43.45,USD
+Los Angeles,Boo's Philly Cheesesteaks - Koreatown,2022-01-10T18:13:09.000Z,2022-01-10T18:48:18.000Z,completed,Wise Chips,1,Salt and Vinegar,0.0,,2.25,43.45,USD
+Los Angeles,Denny's (13136 Sherman Way),2021-12-25T02:32:54.000Z,2021-12-25T04:03:14.000Z,completed,Build Your Own Grand Slam®,1,"2 Toast, Scrambled, Hash Browns, (2) White Toast, (2) Turkey Bacon Strips, 2 Eggs, Potatoes, 2 Bacon",0.0,,11.79,25.13,USD
+Los Angeles,Denny's (13136 Sherman Way),2021-12-25T02:32:54.000Z,2021-12-25T04:03:14.000Z,completed,Build Your Own Grand Slam®,1,Minute Maid Orange Juice,4.29,,11.79,25.13,USD
+Los Angeles,Denny's (13136 Sherman Way),2021-12-25T02:32:54.000Z,2021-12-25T04:03:14.000Z,completed,Sauces and Dressings,1,"Buffalo Sauce, Honey Mustard Dressing",0.0,,1.19,25.13,USD
+Los Angeles,Denny's (13136 Sherman Way),2021-12-25T02:32:54.000Z,2021-12-25T04:03:14.000Z,completed,Seasoned Fries,1,"",,,5.59,25.13,USD
+Los Angeles,Nick's Pizza,2021-12-22T01:22:28.000Z,2021-12-22T02:14:58.000Z,completed,Chicken Nuggets,1,"8 pcs, Spicy Buffalo",0.0,,5.99,21.91,USD
+Los Angeles,Nick's Pizza,2021-12-22T01:22:28.000Z,2021-12-22T02:14:58.000Z,completed,Chicken Nuggets,1,Spicy Buffalo,0.5,,5.99,21.91,USD
+Los Angeles,Nick's Pizza,2021-12-22T01:22:28.000Z,2021-12-22T02:14:58.000Z,completed,Mexican Philly Cheese Steak,1,Regular Fries and Lemon Snapple,4.49,No mushrooms or mayo please! Thank you,9.99,21.91,USD
+Los Angeles,Yoshinoya (Panorama City),2021-12-15T00:44:17.000Z,2021-12-15T02:14:37.000Z,completed,Combo Bowl,1,Bundle it,3.89,,10.09,16.26,USD
+Los Angeles,Yoshinoya (Panorama City),2021-12-15T00:44:17.000Z,2021-12-15T02:14:37.000Z,completed,Teriyaki Sauce Only,1,"",,,0.89,16.26,USD
+Los Angeles,Yoshinoya (Panorama City),2021-12-15T00:44:17.000Z,2021-12-15T02:14:37.000Z,completed,Combo Bowl,1,"White Rice, 2-piece Vegetable Spring Rolls, No, Vegetables, Brown Rice, Orange Chicken, Habanero Chicken",0.0,,10.09,16.26,USD
+Los Angeles,Yoshinoya (Panorama City),2021-12-15T00:44:17.000Z,2021-12-15T02:14:37.000Z,completed,Combo Bowl,1,Pepsi,0.69,,10.09,16.26,USD
+Los Angeles,Mashti Malone’s Ice Cream,2021-12-10T22:50:46.000Z,2021-12-10T23:16:01.000Z,completed,Hand Packed Pints,1,Herbal Snow Sorbet,0.0,,9.95,30.32,USD
+Los Angeles,Mashti Malone’s Ice Cream,2021-12-10T22:50:46.000Z,2021-12-10T23:16:01.000Z,completed,Hand Packed Pints,1,"6 Count Round Wafers, Rainbow Sprinkles",0.75,,9.95,30.32,USD
+Los Angeles,Barstool Bites (6363 Yucca Street),2021-12-10T20:52:41.000Z,2021-12-10T21:37:19.000Z,completed,Barstool Carl's Snake Draft Sampler Bucket,1,"",,,30.99,55.68,USD
+Los Angeles,Barstool Bites (6363 Yucca Street),2021-12-10T20:52:41.000Z,2021-12-10T21:37:19.000Z,completed,Biggie by Smitty,1,"",,,16.99,55.68,USD
+Los Angeles,Barstool Bites (6363 Yucca Street),2021-12-10T20:52:41.000Z,2021-12-10T21:37:19.000Z,completed,Canned Soda,1,Coke,0.0,,2.49,55.68,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-29T17:09:43.000Z,2021-11-29T17:54:23.000Z,completed,Boo's Cheesesteak,1,Cheese Whiz,0.0,,12.45,49.41,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-29T17:09:43.000Z,2021-11-29T17:54:23.000Z,completed,Boo's Pepper Cheesesteak,1,Provolone,0.0,,13.45,49.41,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-29T17:09:43.000Z,2021-11-29T17:54:23.000Z,completed,Cheese Fries,1,Large,0.7,,5.8,49.41,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-29T17:09:43.000Z,2021-11-29T17:54:23.000Z,completed,Coke,1,"",,,2.25,49.41,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-29T17:09:43.000Z,2021-11-29T17:54:23.000Z,completed,Side of Cherry Peppers,1,"",,,1.0,49.41,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-29T17:09:43.000Z,2021-11-29T17:54:23.000Z,completed,Wise Chips,1,"Salt and Vinegar, Honey BBQ",0.0,,2.0,49.41,USD
+Los Angeles,Papa's Pasta,2021-11-13T23:30:23.000Z,2021-11-14T01:00:43.000Z,completed,Build Your Own Pasta,1,Spinach and Cheese Ravioli,1.0,,16.99,29.53,USD
+Los Angeles,Papa's Pasta,2021-11-13T23:30:23.000Z,2021-11-14T01:00:43.000Z,completed,Mexican Coca cola,1,No,0.0,,3.99,29.53,USD
+Los Angeles,Papa's Pasta,2021-11-13T23:30:23.000Z,2021-11-14T01:00:43.000Z,completed,Build Your Own Pasta,1,"Arrabiata (spicy marinara), Shaved Parmesan , Black Olives, No Protein, Green Olives",0.0,,16.99,29.53,USD
+Los Angeles,Papa's Pasta,2021-11-13T23:30:23.000Z,2021-11-14T01:00:43.000Z,completed,Garlic Knots,1,"",,,7.99,29.53,USD
+Los Angeles,Mashti Malone’s Ice Cream,2021-11-11T21:18:03.000Z,2021-11-11T21:50:30.000Z,completed,Hand Packed Pints,1,Herbal Snow Sorbet,0.0,,9.95,19.17,USD
+Los Angeles,Mashti Malone’s Ice Cream,2021-11-11T21:18:03.000Z,2021-11-11T21:50:30.000Z,completed,Hand Packed Pints,1,"Rainbow Sprinkles, Waffle Cone Pieces",0.75,,9.95,19.17,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-11T19:25:48.000Z,2021-11-11T19:57:20.000Z,completed,Boo's Cheesesteak,1,Provolone,0.0,,11.95,42.68,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-11T19:25:48.000Z,2021-11-11T19:57:20.000Z,completed,Boo's Cheesesteak,1,1/2 Portion Steak,2.75,,11.95,42.68,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-11T19:25:48.000Z,2021-11-11T19:57:20.000Z,completed,Cheese Fries,1,Large,0.7,Can I please have a side of buffallo sauce or hot sauce?  Thank you!,5.8,42.68,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-11T19:25:48.000Z,2021-11-11T19:57:20.000Z,completed,Side of Cherry Peppers,1,"",,,1.0,42.68,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-11T19:25:48.000Z,2021-11-11T19:57:20.000Z,completed,Boo's Cheesesteak,1,"Sweet Bell Peppers, Xtra Onions, Cherry Peppers",1.0,,11.95,42.68,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-11T19:25:48.000Z,2021-11-11T19:57:20.000Z,completed,Coke,1,"",,,2.25,42.68,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-11T19:25:48.000Z,2021-11-11T19:57:20.000Z,completed,IBC Rootbeer,1,"",,,2.25,42.68,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-11T19:25:48.000Z,2021-11-11T19:57:20.000Z,completed,Side of Pickles,1,"",,,1.0,42.68,USD
+Los Angeles,Boo's Philly Cheesesteaks  (Silverlake),2021-11-11T19:25:48.000Z,2021-11-11T19:57:20.000Z,completed,Wise Chips,1,Salt and Vinegar,0.0,,2.0,42.68,USD
+Los Angeles,Phillz Cheesesteaks (5162 Sepulveda Blvd),2021-11-05T00:22:04.000Z,2021-11-05T00:46:27.000Z,completed,Jalapeno Cheesesteak,1,"Buffalo Sauce, Sauce on the Side",0.0,,16.99,36.56,USD
+Los Angeles,Phillz Cheesesteaks (5162 Sepulveda Blvd),2021-11-05T00:22:04.000Z,2021-11-05T00:46:27.000Z,completed,Jalapeno Cheesesteak,1,French Fries,6.99,,16.99,36.56,USD
+Los Angeles,Phillz Cheesesteaks (5162 Sepulveda Blvd),2021-11-05T00:22:04.000Z,2021-11-05T00:46:27.000Z,completed,Bottled Water,1,"",,,2.99,36.56,USD
+Los Angeles,Phillz Cheesesteaks (5162 Sepulveda Blvd),2021-11-05T00:22:04.000Z,2021-11-05T00:46:27.000Z,completed,Coca-Cola®,1,"",,,2.99,36.56,USD
+Los Angeles,Denny's (15540 Roscoe Blvd),2021-10-22T04:35:02.000Z,2021-10-22T06:05:23.000Z,completed,Berry Vanilla Crepe Breakfast,1,Hash Browns with Cheese,1.49,,0.0,24.39,USD
+Los Angeles,Denny's (15540 Roscoe Blvd),2021-10-22T04:35:02.000Z,2021-10-22T06:05:23.000Z,completed,Signature Diner Blend Coffee,1,Signature Diner Blend Coffee,0.0,,4.09,24.39,USD
+Los Angeles,Denny's (15540 Roscoe Blvd),2021-10-22T04:35:02.000Z,2021-10-22T06:05:23.000Z,completed,Berry Vanilla Crepe Breakfast,1,"Scrambled, Turkey bacon slices (2)",0.0,,0.0,24.39,USD
+Los Angeles,Denny's (15540 Roscoe Blvd),2021-10-22T04:35:02.000Z,2021-10-22T06:05:23.000Z,completed,Berry Vanilla Crepe Breakfast,1,Strawberry Vanilla 2 Crepe Breakfast (2 Crepe),16.69,,0.0,24.39,USD
+Los Angeles,Pizza Hut (7136 Van Nuys Blvd.),2021-10-13T23:51:52.000Z,2021-10-14T00:11:23.000Z,completed,Breadsticks,1,"",,,8.39,22.62,USD
+Los Angeles,Pizza Hut (7136 Van Nuys Blvd.),2021-10-13T23:51:52.000Z,2021-10-14T00:11:23.000Z,completed,"6\" Personal Pan Pizza",1,"Classic Marinara, Original Pan® Pizza",0.0,,5.99,22.62,USD
+Los Angeles,Pizza Hut (7136 Van Nuys Blvd.),2021-10-13T23:51:52.000Z,2021-10-14T00:11:23.000Z,completed,"6\" Personal Pan Pizza",1,Sweet Pineapple,0.6,,5.99,22.62,USD
+Los Angeles,Pizza Hut (7136 Van Nuys Blvd.),2021-10-13T23:51:52.000Z,2021-10-14T00:11:23.000Z,completed,Honey BBQ,1,"",,,0.9,22.62,USD
+Los Angeles,Philly Fresh Cheesesteaks (9061 Van Nuys Blvd),2021-10-11T23:48:48.000Z,2021-10-12T00:23:03.000Z,completed,French Fries,2,"",,,5.93,34.9,USD
+Los Angeles,Philly Fresh Cheesesteaks (9061 Van Nuys Blvd),2021-10-11T23:48:48.000Z,2021-10-12T00:23:03.000Z,completed,Lemonade,1,"",,,2.4,34.9,USD
+Los Angeles,Philly Fresh Cheesesteaks (9061 Van Nuys Blvd),2021-10-11T23:48:48.000Z,2021-10-12T00:23:03.000Z,completed,Philadelphia Cheesesteak,2,Provolone Cheese,0.0,,10.78,34.9,USD
+Los Angeles,Carls' Jr. 7378,2021-10-10T03:06:58.000Z,2021-10-10T03:30:03.000Z,completed,Simply Orange®,1,"",,,2.2,26.88,USD
+Los Angeles,Carls' Jr. 7378,2021-10-10T03:06:58.000Z,2021-10-10T03:30:03.000Z,completed,Beyond Famous Star® with Cheese Combo,1,"CHOOSE A DRINK, CHOOSE A SIDE, Medium, Natural-Cut Fries, Cherry Coke®",0.0,,14.99,26.88,USD
+Los Angeles,Carls' Jr. 7378,2021-10-10T03:06:58.000Z,2021-10-10T03:30:03.000Z,completed,Beyond Famous Star® with Cheese Combo,1,Crisscut® Fries,0.25,,14.99,26.88,USD
+Los Angeles,Carls' Jr. 7378,2021-10-10T03:06:58.000Z,2021-10-10T03:30:03.000Z,completed,Beyond Famous Star® with Cheese Combo,1,Large,2.33,,14.99,26.88,USD
+Los Angeles,Carls' Jr. 7378,2021-10-05T03:02:35.000Z,2021-10-05T03:21:28.000Z,completed,Beyond Famous Star® with Cheese Combo,1,"CHOOSE A DRINK, CHOOSE A SIDE, Medium, Minute Maid® Orange Juice, Natural-Cut Fries",0.0,,14.99,33.11,USD
+Los Angeles,Carls' Jr. 7378,2021-10-05T03:02:35.000Z,2021-10-05T03:21:28.000Z,completed,Beyond Famous Star® with Cheese Combo,1,Crisscut® Fries,0.25,,14.99,33.11,USD
+Los Angeles,Carls' Jr. 7378,2021-10-05T03:02:35.000Z,2021-10-05T03:21:28.000Z,completed,Beyond Famous Star® with Cheese Combo,1,Large,2.33,,14.99,33.11,USD
+Los Angeles,Carls' Jr. 7378,2021-10-05T03:02:35.000Z,2021-10-05T03:21:28.000Z,completed,Fried Zucchini,1,House Dressing,0.0,,6.38,33.11,USD
+Los Angeles,NY Crust Pizzeria (Van Nuys),2021-09-29T02:49:35.000Z,2021-09-29T03:13:50.000Z,completed,Greek Salad,1,"",,,10.95,36.43,USD
+Los Angeles,NY Crust Pizzeria (Van Nuys),2021-09-29T02:49:35.000Z,2021-09-29T03:13:50.000Z,completed,Margherita Pizza,1,"Small (10\"), Regular",0.0,,12.99,36.43,USD
+Los Angeles,NY Crust Pizzeria (Van Nuys),2021-09-29T02:49:35.000Z,2021-09-29T03:13:50.000Z,completed,Margherita Pizza,1,"Black Olives , Jalapeno Pepper",1.25,,12.99,36.43,USD
+Los Angeles,Yoshinoya (Panorama City),2021-09-27T23:54:06.000Z,2021-09-28T00:19:50.000Z,completed,Combo XL Bowl,1,"White Rice, 2-piece Vegetable Spring Rolls, No, Vegetables, Habanero Chicken XL, Orange Chicken XL",0.0,,11.39,24.78,USD
+Los Angeles,Yoshinoya (Panorama City),2021-09-27T23:54:06.000Z,2021-09-28T00:19:50.000Z,completed,Combo XL Bowl,1,Bundle it,3.89,,11.39,24.78,USD
+Los Angeles,Yoshinoya (Panorama City),2021-09-27T23:54:06.000Z,2021-09-28T00:19:50.000Z,completed,Teriyaki Sauce Only,1,"",,,0.79,24.78,USD
+Los Angeles,Yoshinoya (Panorama City),2021-09-27T23:54:06.000Z,2021-09-28T00:19:50.000Z,completed,Combo XL Bowl,1,Dole Strawberry Lemonade,0.69,,11.39,24.78,USD
+Los Angeles,Bangin Buns (NoHo),2021-09-01T22:09:39.000Z,2021-09-01T22:42:22.000Z,completed,Bangin Plate,1,Spicy (feel the heat),0.0,,14.99,32.09,USD
+Los Angeles,Bangin Buns (NoHo),2021-09-01T22:09:39.000Z,2021-09-01T22:42:22.000Z,completed,Lemonade,1,"",,,2.5,32.09,USD
+Los Angeles,Bangin Buns (NoHo),2021-09-01T22:09:39.000Z,2021-09-01T22:42:22.000Z,completed,Honey Hot,1,"",,,0.65,32.09,USD
+Los Angeles,Bangin Buns (NoHo),2021-09-01T22:09:39.000Z,2021-09-01T22:42:22.000Z,completed,Waffle Fries,1,"",,Hot sauce on side if possible,5.85,32.09,USD
+Los Angeles,STRIKEOUT - SEC 24 Right Field Reserve Level - Postmates,2021-08-20T20:32:02.000Z,2021-08-20T20:34:27.000Z,completed,Estrella Jalisco (4.50% ABV),1,"",,,17.75,47.36,USD
+Los Angeles,STRIKEOUT - SEC 24 Right Field Reserve Level - Postmates,2021-08-20T20:32:02.000Z,2021-08-20T20:34:27.000Z,completed,Super Dodger Dog,1,"",,,7.75,47.36,USD
+Los Angeles,STRIKEOUT - SEC 24 Right Field Reserve Level - Postmates,2021-08-20T20:00:40.000Z,2021-08-20T20:01:11.000Z,completed,Nacho Cheese Cup,1,"",,,2.25,14.51,USD
+Los Angeles,STRIKEOUT - SEC 24 Right Field Reserve Level - Postmates,2021-08-20T20:00:40.000Z,2021-08-20T20:01:11.000Z,completed,Frozen Lemonade,1,"",,,5.75,14.51,USD
+Los Angeles,STRIKEOUT - SEC 24 Right Field Reserve Level - Postmates,2021-08-20T20:00:40.000Z,2021-08-20T20:01:11.000Z,completed,Pretzel,1,with salt,0.0,,5.25,14.51,USD
+Los Angeles,800 Degrees Neapolitan Pizza - Hollywood,2021-08-18T21:32:20.000Z,2021-08-18T21:58:01.000Z,completed,Chopped Salad,1,DRESSING ON SIDE,0.0,,0.0,60.73,USD
+Los Angeles,800 Degrees Neapolitan Pizza - Hollywood,2021-08-18T21:32:20.000Z,2021-08-18T21:58:01.000Z,completed,Chopped Salad,1,Small,12.28,,0.0,60.73,USD
+Los Angeles,800 Degrees Neapolitan Pizza - Hollywood,2021-08-18T21:32:20.000Z,2021-08-18T21:58:01.000Z,completed,Doppio Pepperoni Pizza,1,"Basil, Garlic, Parmeson",0.0,,17.73,60.73,USD
+Los Angeles,800 Degrees Neapolitan Pizza - Hollywood,2021-08-18T21:32:20.000Z,2021-08-18T21:58:01.000Z,completed,Margherita,1,"Jalapeno, Kalamata Olives",1.36,,15.0,60.73,USD
+Los Angeles,800 Degrees Neapolitan Pizza - Hollywood,2021-08-18T21:32:20.000Z,2021-08-18T21:58:01.000Z,completed,Side Pesto,1,"",,,1.36,60.73,USD
+Los Angeles,Lucifer's Pizza (Sunset),2021-08-13T20:59:00.000Z,2021-08-13T21:42:19.000Z,completed,Baked Fries,1,"",,,5.99,49.1,USD
+Los Angeles,Lucifer's Pizza (Sunset),2021-08-13T20:59:00.000Z,2021-08-13T21:42:19.000Z,completed,"Simply Cheese Pizza (16\")",1,"Jalapenos, Kalamata Olives",2.75,,18.99,49.1,USD
+Los Angeles,Lucifer's Pizza (Sunset),2021-08-13T20:59:00.000Z,2021-08-13T21:42:19.000Z,completed,Flame Baked Chicken Wings (6 pack),1,Blazing Spice,0.0,,7.99,49.1,USD
+Los Angeles,Lucifer's Pizza (Sunset),2021-08-13T20:59:00.000Z,2021-08-13T21:42:19.000Z,completed,"Simply Cheese Pizza (16\")",1,"Pepper Flakes, Fiery Spice, Regular Cheese, Regular Crust, Black Pepper",0.0,,18.99,49.1,USD
+Los Angeles,Crispy Crust (Hollywood),2021-08-05T18:00:23.000Z,2021-08-05T18:19:15.000Z,completed,Buffalo Wings,1,6 Pieces,8.99,,0.0,41.97,USD
+Los Angeles,Crispy Crust (Hollywood),2021-08-05T18:00:23.000Z,2021-08-05T18:19:15.000Z,completed,Medium Pizza,1,Thick Crust,1.0,,14.99,41.97,USD
+Los Angeles,Crispy Crust (Hollywood),2021-08-05T18:00:23.000Z,2021-08-05T18:19:15.000Z,completed,Medium Pizza,1,"Green Olives, Jalapenos",1.5,,14.99,41.97,USD
+Los Angeles,Crispy Crust (Hollywood),2021-08-05T18:00:23.000Z,2021-08-05T18:19:15.000Z,completed,Side of Jalapenos,1,"",,,0.99,41.97,USD
+Los Angeles,Crispy Crust (Hollywood),2021-08-05T18:00:23.000Z,2021-08-05T18:19:15.000Z,completed,Buffalo Wings,1,"Ranch, Extra Hot Sauce",0.0,,0.0,41.97,USD
+Los Angeles,Crispy Crust (Hollywood),2021-08-05T18:00:23.000Z,2021-08-05T18:19:15.000Z,completed,Coke Can,1,"",,,1.99,41.97,USD
+Los Angeles,Crispy Crust (Hollywood),2021-08-05T18:00:23.000Z,2021-08-05T18:19:15.000Z,completed,Hot Suace,1,"",,,0.99,41.97,USD
+Los Angeles,Crispy Crust (Hollywood),2021-08-05T18:00:23.000Z,2021-08-05T18:19:15.000Z,completed,Medium Pizza,1,Pizza Sauce,0.0,,14.99,41.97,USD
+Los Angeles,Dave's Hot Chicken (Hollywood),2021-08-04T22:04:33.000Z,2021-08-04T22:41:36.000Z,completed,Combo #3: 1 Tender & 1 Slider w/ Fries,1,"Ketchup Packets, Extra Hot, Honey Packets, Reaper",0.0,,14.29,25.22,USD
+Los Angeles,Dave's Hot Chicken (Hollywood),2021-08-04T22:04:33.000Z,2021-08-04T22:41:36.000Z,completed,Kale Slaw,1,"",,,4.19,25.22,USD
+Los Angeles,Dave's Hot Chicken (Hollywood),2021-08-04T22:04:33.000Z,2021-08-04T22:41:36.000Z,completed,Side of Dave's Sauce,1,"",,,0.0,25.22,USD
